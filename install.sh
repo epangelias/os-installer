@@ -1,5 +1,5 @@
 #!/bin/bash
 
 ./preferences.sh
-./install-packages.sh
+./install_packages.sh
 ./duo_install.sh
