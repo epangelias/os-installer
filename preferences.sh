@@ -8,3 +8,6 @@ gsettings set org.gnome.mutter workspaces-only-on-primary false
 git config --global user.email "epangelias@gmail.com"
 git config --global user.name "Epangelias"
 git config --global credential.helper store
+
+./custom_shortcuts.sh
+./set_firefox_pref.sh

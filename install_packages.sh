@@ -18,6 +18,7 @@ sudo pacman -Rns --noconfirm lollypop gnome-tour
 # Install Firefox GNOME theme
 echo "Installing Firefox GNOME theme..."
 curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash
+./set_firefox_pref.sh
 
 # Install ollama
 echo "Installing ollama..."
