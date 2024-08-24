@@ -43,6 +43,8 @@ ExecStart=$DUO_PATH bat-limit 80
 [Install]
 WantedBy=multi-user.target" | sudo tee /etc/systemd/system/duo-battery-limit.service > /dev/null
 
+$DUO_PATH set-tablet-mapping
+
 # Reload systemd to recognize the new services
 sudo systemctl daemon-reload
 

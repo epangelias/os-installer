@@ -1,19 +1,15 @@
 #!/bin/bash
 
 echo "Updating the system..."
-# sudo pacman -Syu --noconfirm
+sudo pacman -Syu --noconfirm
 
 # Install packages
 echo "Installing packages..."
-sudo pacman -S --noconfirm vim libreoffice-fresh inkscape geary
+sudo pacman -S --noconfirm vim geary # libreoffice-fresh inkscape
 
 # Install AUR packages
 echo "Installing AUR packages..."
-sudo -u $USER pamac build visual-studio-code-bin --no-confirm
-
-# Uninstall unwanted packages
-echo "Uninstalling unwanted packages..."
-sudo pacman -Rns --noconfirm lollypop gnome-tour
+sudo pamac build visual-studio-code-bin --no-confirm
 
 # Install Firefox GNOME theme
 echo "Installing Firefox GNOME theme..."
@@ -36,10 +32,5 @@ grep -qxF "$PATH_LINE" "$FILE" || echo "$PATH_LINE" >> "$FILE"
 sudo -u $USER pamac install --no-confirm manjaro-printer
 sudo gpasswd -a $USER sys
 sudo -u $USER pamac install --no-confirm hplip-plugin avahi system-config-printer
-sudo systemctl enable --now cups.service
-sudo systemctl enable --now cups.socket
-sudo systemctl enable --now cups.path
-sudo systemctl enable --now avahi-daemon.service
 
-
-echo "All packages installed and unwanted packages removed."
+echo "\n\nAll packages installed and unwanted packages removed."
