@@ -1,6 +1,7 @@
 #!/bin/bash
 
-cp -r ./black_pixel.png ~/Pictures/Wallpapers/black_pixel.png
+mkdir ~/Pictures/Wallpapers
+cp -R ./black_pixel.png ~/Pictures/Wallpapers/
 gsettings set org.gnome.desktop.wm.preferences focus-mode 'sloppy'
 gsettings set org.gnome.desktop.background picture-uri "file://$(realpath ~/Pictures/Wallpapers/black_pixel.png)"
 gsettings set org.gnome.desktop.background picture-uri-dark "file://$(realpath ~/Pictures/Wallpapers/black_pixel.png)"
