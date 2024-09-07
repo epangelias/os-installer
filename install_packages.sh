@@ -32,5 +32,8 @@ grep -qxF "$PATH_LINE" "$FILE" || echo "$PATH_LINE" >> "$FILE"
 sudo -u $USER pamac install --no-confirm manjaro-printer
 sudo gpasswd -a $USER sys
 sudo -u $USER pamac install --no-confirm hplip-plugin avahi system-config-printer
+sudo systemctl enable --now cups.service 
+sudo systemctl enable --now cups.socket 
+sudo systemctl enable --now cups.path 
 
 echo "\n\nAll packages installed and unwanted packages removed."
