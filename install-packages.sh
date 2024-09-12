@@ -5,7 +5,7 @@ sudo pacman -Syu --noconfirm
 
 # Install packages
 echo "Installing packages..."
-sudo pacman -S --noconfirm vim geary libreoffice-fresh inkscape transmission-gtk
+sudo pacman -S --noconfirm vim geary libreoffice-fresh inkscape transmission-gtk firefox
 
 # Install AUR packages
 echo "Installing AUR packages..."
@@ -14,7 +14,7 @@ sudo pamac build visual-studio-code-bin --no-confirm
 # Install Firefox GNOME theme
 echo "Installing Firefox GNOME theme..."
 curl -s -o- https://raw.githubusercontent.com/rafaelmardojai/firefox-gnome-theme/master/scripts/install-by-curl.sh | bash
-./set_firefox_pref.sh
+./set-firefox-pref.sh
 
 # Install ollama
 echo "Installing ollama..."

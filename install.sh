@@ -1,6 +1,9 @@
 #!/bin/bash
 
 ./preferences.sh
-./install_packages.sh
-./duo_install.sh
+./install-packages.sh
+./duo-install.sh
 # ./install_grub.sh
+
+
+mkdir ~/Projects
