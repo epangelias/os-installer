@@ -5,7 +5,7 @@ sudo pacman -Syu --noconfirm
 
 # Install packages
 echo "Installing packages..."
-sudo pacman -S --noconfirm vim geary libreoffice-fresh inkscape transmission-gtk firefox
+sudo pacman -S --noconfirm vim geary libreoffice-fresh inkscape transmission-gtk firefox fish
 
 # Install AUR packages
 echo "Installing AUR packages..."

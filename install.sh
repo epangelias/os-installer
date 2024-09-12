@@ -7,3 +7,4 @@
 
 
 mkdir ~/Projects
+chsh -s /bin/fish
