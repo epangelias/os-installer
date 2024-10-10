@@ -1,0 +1,4 @@
+Environment="OLLAMA_INTEL_GPU=true" 
+Environment="OLLAMA_NUM_PARALLEL=1"
+Environment="OLLAMA_MAX_LOADED_MODELS=1"
+Environment="OLLAMA_MAX_QUEUE=1"
