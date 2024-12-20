@@ -22,6 +22,8 @@ current_keybindings=${current_keybindings:1:-1}
 current_keybindings=${current_keybindings//\'/}
 
 # Add new keybindings to the list
+
+# NOTE: Remove current_keybindings if causes error
 new_keybindings="${current_keybindings}, '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/'"
 
 # Remove leading comma if current_keybindings was empty

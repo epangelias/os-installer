@@ -2,7 +2,7 @@
 
 ./preferences.sh
 ./install-packages.sh
-./duo-install.sh
+# ./duo-install.sh
 # ./install_grub.sh
 
 
